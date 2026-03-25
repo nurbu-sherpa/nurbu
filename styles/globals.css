@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --surface: 248 250 252;
+  --panel: 255 255 255;
+  --border: 203 213 225;
+  --muted: 100 116 139;
+  --accent: 14 165 233;
+  --accent-warm: 249 115 22;
+}
+
+.dark {
+  color-scheme: dark;
+  --surface: 2 6 23;
+  --panel: 15 23 42;
+  --border: 51 65 85;
+  --muted: 148 163 184;
+  --accent: 56 189 248;
+  --accent-warm: 251 146 60;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans), "Segoe UI", sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-surface;
+  }
+
+  ::selection {
+    background: rgba(14, 165, 233, 0.2);
+  }
+}
