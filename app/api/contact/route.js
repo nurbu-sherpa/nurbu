@@ -1,5 +1,16 @@
+import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 import { sanitizeContactPayload, validateEmail } from "@/utils/helpers";
+
+function getTransporter() {
+  return nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_APP_PASSWORD
+    }
+  });
+}
 
 export async function POST(request) {
   try {
@@ -20,13 +31,51 @@ export async function POST(request) {
       );
     }
 
-    // Replace this console statement with an email service or database call later.
-    console.log("New contact request:", payload);
+    if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Email service is not configured yet. Add Gmail environment variables first."
+        },
+        { status: 500 }
+      );
+    }
+
+    const recipientEmail = process.env.CONTACT_TO_EMAIL || process.env.GMAIL_USER;
+    const transporter = getTransporter();
+
+    await transporter.sendMail({
+      from: `Portfolio Contact <${process.env.GMAIL_USER}>`,
+      to: recipientEmail,
+      replyTo: payload.email,
+      subject: payload.subject || `New portfolio message from ${payload.name}`,
+      text: [
+        `Name: ${payload.name}`,
+        `Email: ${payload.email}`,
+        payload.subject ? `Subject: ${payload.subject}` : null,
+        "",
+        "Message:",
+        payload.message
+      ]
+        .filter(Boolean)
+        .join("\n"),
+      html: `
+        <div style="font-family:Segoe UI,Arial,sans-serif;line-height:1.6;color:#0f172a;max-width:640px;margin:0 auto;">
+          <h2 style="margin-bottom:16px;">New portfolio contact message</h2>
+          <p><strong>Name:</strong> ${payload.name}</p>
+          <p><strong>Email:</strong> ${payload.email}</p>
+          ${payload.subject ? `<p><strong>Subject:</strong> ${payload.subject}</p>` : ""}
+          <div style="margin-top:20px;padding:16px;border:1px solid #cbd5e1;border-radius:12px;background:#f8fafc;white-space:pre-wrap;">
+            ${payload.message}
+          </div>
+        </div>
+      `
+    });
 
     return NextResponse.json(
       {
         success: true,
-        message: "Thanks for reaching out. I will get back to you soon."
+        message: "Thanks for reaching out. Your message has been sent successfully."
       },
       { status: 200 }
     );

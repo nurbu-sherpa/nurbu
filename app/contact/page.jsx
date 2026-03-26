@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 sm:px-8 lg:grid-cols-[0.95fr_1.05fr]">
+    <section className="mx-auto grid max-w-6xl gap-10 px-6 pb-24 pt-10 sm:px-8 sm:pb-28 sm:pt-10 lg:grid-cols-[0.95fr_1.05fr]">
       <div className="space-y-6">
         <SectionHeading
           eyebrow="Contact"
@@ -22,13 +22,15 @@ export default function ContactPage() {
               <span className="block text-xs font-semibold uppercase tracking-[0.28em] text-accent">
                 Email
               </span>
-              sherpanurbu15@gmail.com
+              <a href="mailto:sherpanurbu15@gmail.com" className="hover:underline">
+                sherpanurbu15@gmail.com
+              </a>
             </p>
             <p>
               <span className="block text-xs font-semibold uppercase tracking-[0.28em] text-accent">
                 Number
               </span>
-              9818486480
+              <a href="tel:9818486480" className="hover:underline">9818486480</a>
             </p>
             <p>
               <span className="block text-xs font-semibold uppercase tracking-[0.28em] text-accent">
@@ -50,3 +52,5 @@ export default function ContactPage() {
     </section>
   );
 }
+
+

@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function ProjectsPage() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-20 sm:px-8">
+    <section className="mx-auto max-w-6xl px-6 pb-24 pt-10 sm:px-8 sm:pb-28 sm:pt-10">
       <SectionHeading
         eyebrow="Selected Work"
         title="Projects built for speed, clarity, and scale."
@@ -24,3 +24,5 @@ export default function ProjectsPage() {
     </section>
   );
 }
+
+

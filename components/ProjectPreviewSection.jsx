@@ -17,7 +17,8 @@ export default function ProjectPreviewSection() {
 
         <Link
           href="/projects"
-          className="text-sm font-semibold text-slate-700 transition hover:text-accent dark:text-slate-200"
+          data-cursor="interactive"
+          className="text-sm font-semibold text-slate-700 transition hover:translate-x-1 hover:text-accent dark:text-slate-200"
         >
           See all projects
         </Link>

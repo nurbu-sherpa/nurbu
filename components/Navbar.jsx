@@ -22,56 +22,19 @@ export default function Navbar() {
   }, [pathname]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/50 bg-surface/80 backdrop-blur-xl">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
-        <Link href="/" className="group">
-          <span className="font-mono text-sm font-semibold uppercase tracking-[0.32em] text-slate-800 dark:text-white">
-            Nurbu Tsering Sherpa
-          </span>
-          <span className="mt-1 block text-xs text-slate-500 transition group-hover:text-accent dark:text-slate-400">
-            Frontend Developer
-          </span>
-        </Link>
+    <header className="fixed inset-x-0 top-0 z-[80] px-4 py-3 sm:px-6 lg:px-8">
+      <div className="liquid-glass-strong mx-auto max-w-7xl overflow-hidden rounded-[1.8rem]">
+        <nav className="mx-auto flex items-center justify-between px-6 py-4 sm:px-8">
+          <Link href="/" className="group">
+            <span className="font-mono text-sm font-semibold uppercase tracking-[0.32em] text-slate-800 dark:text-white">
+              Nurbu Tsering Sherpa
+            </span>
+            <span className="mt-1 block text-xs text-slate-500 transition group-hover:text-accent dark:text-slate-400">
+              Frontend Developer
+            </span>
+          </Link>
 
-        <div className="hidden items-center gap-3 md:flex">
-          {navigationItems.map((item) => {
-            const isActive = pathname === item.href;
-
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={cn(
-                  "rounded-full px-4 py-2 text-sm font-medium transition",
-                  isActive
-                    ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900"
-                    : "text-slate-600 hover:bg-white/70 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-white/10 dark:hover:text-white"
-                )}
-              >
-                {item.label}
-              </Link>
-            );
-          })}
-          <ThemeToggle />
-        </div>
-
-        <div className="flex items-center gap-3 md:hidden">
-          <ThemeToggle />
-          <button
-            type="button"
-            onClick={() => setIsOpen((previous) => !previous)}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border/80 bg-panel/80 text-slate-900 transition hover:border-accent hover:text-accent dark:text-white"
-            aria-label="Toggle navigation menu"
-            aria-expanded={isOpen}
-          >
-            {isOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
-        </div>
-      </nav>
-
-      {isOpen ? (
-        <div className="border-t border-border/50 bg-panel/95 px-6 py-4 md:hidden">
-          <div className="mx-auto flex max-w-6xl flex-col gap-2">
+          <div className="hidden items-center gap-3 md:flex">
             {navigationItems.map((item) => {
               const isActive = pathname === item.href;
 
@@ -80,19 +43,61 @@ export default function Navbar() {
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "rounded-2xl px-4 py-3 text-sm font-medium transition",
+                    "rounded-full px-4 py-2 text-sm font-medium transition",
                     isActive
-                      ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900"
-                      : "text-slate-600 hover:bg-white hover:text-slate-900 dark:text-slate-300 dark:hover:bg-white/10 dark:hover:text-white"
+                      ? "liquid-chip text-slate-950 dark:text-white"
+                      : "text-slate-600 hover:bg-white/55 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-white/10 dark:hover:text-white"
                   )}
                 >
                   {item.label}
                 </Link>
               );
             })}
+            <ThemeToggle />
           </div>
-        </div>
-      ) : null}
+
+          <div className="flex items-center gap-3 md:hidden">
+            <ThemeToggle />
+            <button
+              type="button"
+              onClick={() => setIsOpen((previous) => !previous)}
+              className="liquid-chip inline-flex h-11 w-11 items-center justify-center rounded-full text-slate-900 transition hover:border-accent hover:text-accent dark:text-white"
+              aria-label="Toggle navigation menu"
+              aria-expanded={isOpen}
+            >
+              {isOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </div>
+        </nav>
+
+        {isOpen ? (
+          <div className="border-t border-white/30 px-6 py-4 md:hidden dark:border-white/10">
+            <div className="mx-auto flex max-w-6xl flex-col gap-2">
+              {navigationItems.map((item) => {
+                const isActive = pathname === item.href;
+
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={cn(
+                      "rounded-2xl px-4 py-3 text-sm font-medium transition",
+                      isActive
+                        ? "liquid-chip text-slate-950 dark:text-white"
+                        : "text-slate-600 hover:bg-white/55 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-white/10 dark:hover:text-white"
+                    )}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        ) : null}
+      </div>
     </header>
   );
 }
+
+
+

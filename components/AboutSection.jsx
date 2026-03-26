@@ -23,9 +23,10 @@ export default function AboutSection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{ y: -8 }}
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.5 }}
-          className="rounded-[2rem] border border-border/60 bg-panel/80 p-8 backdrop-blur"
+          className="liquid-glass rounded-[2rem] p-8"
         >
           <p className="text-base leading-8 text-slate-600 dark:text-slate-300">
             I am Nurbu Tsering Sherpa, a frontend developer with a Bachelor of Information Technology
@@ -43,21 +44,22 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.5, delay: 0.08 }}
-          className="rounded-[2rem] border border-border/60 bg-panel/80 p-8 backdrop-blur"
+          className="liquid-glass rounded-[2rem] p-8"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.32em] text-accent">
             Core Focus
           </p>
-          <ul className="mt-5 space-y-4">
+          <div className="mt-5 space-y-4">
             {focusAreas.map((item) => (
-              <li
+              <motion.div
                 key={item}
-                className="rounded-2xl border border-border/60 px-4 py-3 text-sm leading-7 text-slate-700 dark:text-slate-200"
+                whileHover={{ x: 6, scale: 1.01 }}
+                className="liquid-chip rounded-2xl px-4 py-3 text-sm leading-7 text-slate-700 dark:text-slate-200"
               >
                 {item}
-              </li>
+              </motion.div>
             ))}
-          </ul>
+          </div>
         </motion.div>
       </div>
     </section>

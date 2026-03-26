@@ -9,9 +9,10 @@ export default function ProjectCard({ project }) {
     <motion.article
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ y: -8 }}
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.45, ease: "easeOut" }}
-      className="group rounded-[2rem] border border-border/60 bg-panel/80 p-6 shadow-glow backdrop-blur"
+      className="liquid-glass group rounded-[2rem] p-6"
     >
       <div className="flex items-start justify-between gap-4">
         <div>
@@ -25,7 +26,7 @@ export default function ProjectCard({ project }) {
 
         <Link
           href={project.href}
-          className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border/80 text-slate-700 transition group-hover:border-accent group-hover:text-accent dark:text-slate-200"
+          className="liquid-chip inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-slate-700 transition group-hover:border-accent group-hover:text-accent dark:text-slate-200"
           target="_blank"
           rel="noreferrer"
           aria-label={`Open ${project.title}`}
@@ -42,7 +43,7 @@ export default function ProjectCard({ project }) {
         {project.stack.map((item) => (
           <span
             key={item}
-            className="rounded-full border border-border/60 px-3 py-1 text-xs font-medium text-slate-700 dark:text-slate-200"
+            className="liquid-chip rounded-full px-3 py-1 text-xs font-medium text-slate-700 dark:text-slate-200"
           >
             {item}
           </span>
