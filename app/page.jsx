@@ -5,13 +5,13 @@ import ProjectPreviewSection from "@/components/ProjectPreviewSection";
 import SkillsCarousel from "@/components/SkillsCarousel";
 
 export default function HomePage() {
-  return (
-    <>
-      <HeroSection />
-      <ParallaxSection />
-      <SkillsCarousel />
-      <AboutSection />
-      <ProjectPreviewSection />
-    </>
-  );
+    return (
+        <>
+            <HeroSection />
+            <ParallaxSection />
+            <SkillsCarousel />
+            <AboutSection />
+            <ProjectPreviewSection />
+        </>
+    );
 }
