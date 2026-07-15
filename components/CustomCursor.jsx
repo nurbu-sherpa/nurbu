@@ -83,17 +83,17 @@ export default function CustomCursor() {
                 className="pointer-events-none fixed left-0 top-0 z-[90] hidden rounded-full border border-white/35 bg-white/5 backdrop-blur-md md:block"
                 style={{ translateX: springX, translateY: springY }}
                 animate={{
-                    opacity: isPointerVisible ? 1 : 0,
-                    width: cursorVariant === "interactive" ? 78 : cursorVariant === "pressed" ? 42 : 26,
-                    height: cursorVariant === "interactive" ? 78 : cursorVariant === "pressed" ? 42 : 26,
-                    marginLeft: cursorVariant === "interactive" ? -39 : cursorVariant === "pressed" ? -21 : -13,
-                    marginTop: cursorVariant === "interactive" ? -39 : cursorVariant === "pressed" ? -21 : -13,
-                    boxShadow:
-                        cursorVariant === "interactive"
-                            ? "0 0 0 1px rgba(56,189,248,0.35), 0 0 42px rgba(56,189,248,0.22)"
-                            : cursorVariant === "pressed"
-                                ? "0 0 0 1px rgba(249,115,22,0.35), 0 0 36px rgba(249,115,22,0.18)"
-                                : "0 0 0 1px rgba(255,255,255,0.18), 0 0 24px rgba(255,255,255,0.08)"
+                opacity: isPointerVisible ? 1 : 0,
+                width: cursorVariant === "interactive" ? 48 : cursorVariant === "pressed" ? 26 : 16,
+                height: cursorVariant === "interactive" ? 48 : cursorVariant === "pressed" ? 26 : 16,
+                marginLeft: cursorVariant === "interactive" ? -24 : cursorVariant === "pressed" ? -13 : -8,
+                marginTop: cursorVariant === "interactive" ? -24 : cursorVariant === "pressed" ? -13 : -8,
+                boxShadow:
+                    cursorVariant === "interactive"
+                    ? "0 0 0 1px rgba(56,189,248,0.28), 0 0 28px rgba(56,189,248,0.16)"
+                    : cursorVariant === "pressed"
+                        ? "0 0 0 1px rgba(249,115,22,0.28), 0 0 20px rgba(249,115,22,0.14)"
+                        : "0 0 0 1px rgba(255,255,255,0.16), 0 0 14px rgba(255,255,255,0.06)"
                 }}
                 transition={{ type: "spring", stiffness: 240, damping: 22 }}
             />
@@ -103,17 +103,17 @@ export default function CustomCursor() {
                 className="pointer-events-none fixed left-0 top-0 z-[91] hidden rounded-full md:block"
                 style={{ translateX: springX, translateY: springY }}
                 animate={{
-                    opacity: isPointerVisible ? 1 : 0,
-                    width: cursorVariant === "interactive" ? 14 : 8,
-                    height: cursorVariant === "interactive" ? 14 : 8,
-                    marginLeft: cursorVariant === "interactive" ? -7 : -4,
-                    marginTop: cursorVariant === "interactive" ? -7 : -4,
-                    backgroundColor:
-                        cursorVariant === "pressed"
-                            ? "rgba(249,115,22,0.95)"
-                            : cursorVariant === "interactive"
-                                ? "rgba(56,189,248,0.95)"
-                                : "rgba(255,255,255,0.95)"
+                opacity: isPointerVisible ? 1 : 0,
+                width: cursorVariant === "interactive" ? 10 : 5,
+                height: cursorVariant === "interactive" ? 10 : 5,
+                marginLeft: cursorVariant === "interactive" ? -5 : -2.5,
+                marginTop: cursorVariant === "interactive" ? -5 : -2.5,
+                backgroundColor:
+                    cursorVariant === "pressed"
+                    ? "rgba(249,115,22,0.95)"
+                    : cursorVariant === "interactive"
+                        ? "rgba(56,189,248,0.95)"
+                        : "rgba(255,255,255,0.95)"
                 }}
                 transition={{ type: "spring", stiffness: 320, damping: 26 }}
             />
