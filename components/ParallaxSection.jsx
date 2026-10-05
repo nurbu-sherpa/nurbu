@@ -6,16 +6,16 @@ import SectionHeading from "@/components/SectionHeading";
 
 const parallaxCards = [
     {
-        title: "UI Systems",
-        copy: "Structured components, clean variants, and reusable layouts."
+        title: "Reusable components",
+        copy: "I break designs into small, reusable React pieces so features are faster to build and easier to change."
     },
     {
-        title: "Motion Design",
-        copy: "Purposeful transitions that guide attention without slowing the page."
+        title: "Responsive by default",
+        copy: "Every layout is checked across screen sizes and browsers before it ships."
     },
     {
-        title: "Scalable Frontend",
-        copy: "Thoughtful separation of content, components, and interaction logic."
+        title: "Team-friendly code",
+        copy: "As a former team lead, I write code the next developer can pick up without a walkthrough."
     }
 ];
 
@@ -58,21 +58,21 @@ export default function ParallaxSection() {
 
             <motion.div className="mx-auto max-w-6xl px-6 sm:px-8" style={{ y: foregroundY }}>
                 <SectionHeading
-                    eyebrow="Parallax"
-                    title="Background depth that moves slower than the content."
-                    description="This section now uses clear layered scrolling: the background drifts gently while the foreground content moves more noticeably, creating a stronger parallax effect."
+                    eyebrow="How I work"
+                    title="From design file to finished page."
+                    description="The work that matters happens between the mockup and the browser: structure, responsiveness, and motion that helps instead of distracts."
                 />
 
                 <div className="mt-12 grid gap-6 lg:grid-cols-[1.08fr_0.92fr]">
                     <div className="liquid-glass rounded-[2rem] p-8">
-                        <p className="text-sm uppercase tracking-[0.32em] text-accent">Parallax Motion</p>
+                        <p className="text-sm uppercase tracking-[0.32em] text-accent">My approach</p>
                         <h3 className="mt-4 text-3xl font-semibold text-slate-950 dark:text-white">
-                            The background glides slowly while the content leads the scroll.
+                            Readable code and layouts that hold up on every screen.
                         </h3>
                         <p className="mt-4 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-300">
-                            As you scroll through this section, the decorative background and soft color glows move
-                            at a slower speed than the cards and text in front. That difference in motion is what
-                            creates the parallax depth effect.
+                            Whether it&apos;s a React feature or a WordPress theme, I start from the design, plan the
+                            component structure, and test on real devices before handing it off. The goal is
+                            always the same: a page that looks right, loads fast, and is easy to maintain.
                         </p>
                     </div>
 

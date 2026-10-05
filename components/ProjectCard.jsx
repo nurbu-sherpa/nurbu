@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -24,15 +23,17 @@ export default function ProjectCard({ project }) {
                     </h3>
                 </div>
 
-                <Link
-                    href={project.href}
-                    className="liquid-chip inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-slate-700 transition group-hover:border-accent group-hover:text-accent dark:text-slate-200"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={`Open ${project.title}`}
-                >
-                    <ArrowUpRight size={18} />
-                </Link>
+                {project.href ? (
+                    <a
+                        href={project.href}
+                        className="liquid-chip inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-slate-700 transition group-hover:border-accent group-hover:text-accent dark:text-slate-200"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`Open ${project.title} in a new tab`}
+                    >
+                        <ArrowUpRight size={18} />
+                    </a>
+                ) : null}
             </div>
 
             <p className="mt-4 text-sm leading-7 text-slate-600 dark:text-slate-300">

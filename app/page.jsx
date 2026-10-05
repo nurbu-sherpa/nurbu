@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection";
+import ExperienceSection from "@/components/ExperienceSection";
 import HeroSection from "@/components/HeroSection";
 import ParallaxSection from "@/components/ParallaxSection";
 import ProjectPreviewSection from "@/components/ProjectPreviewSection";
@@ -11,6 +12,7 @@ export default function HomePage() {
             <ParallaxSection />
             <SkillsCarousel />
             <AboutSection />
+            <ExperienceSection />
             <ProjectPreviewSection />
         </>
     );

@@ -30,7 +30,7 @@ export default function Navbar() {
                             Nurbu Tsering Sherpa
                         </span>
                         <span className="mt-1 block text-xs text-slate-500 transition group-hover:text-accent dark:text-slate-400">
-                            Frontend Developer
+                            Frontend Developer | React
                         </span>
                     </Link>
 

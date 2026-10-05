@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
 
 const focusAreas = [
-    "3 years of frontend development experience at Parijat Infotech Pvt. Ltd.",
-    "Bachelor of Information Technology and Management (BIM)",
-    "Building responsive, accessible, and user-friendly interfaces",
-    "Maintaining clean and scalable frontend architecture"
+    "React development with reusable, well-structured components",
+    "WordPress theme development and customization",
+    "Responsive, cross-browser layouts from design files",
+    "Former frontend team lead: planning, reviews, and mentoring"
 ];
 
 export default function AboutSection() {
@@ -15,8 +15,8 @@ export default function AboutSection() {
         <section className="mx-auto max-w-6xl px-6 py-20 sm:px-8">
             <SectionHeading
                 eyebrow="About"
-                title="A frontend developer focused on clean interfaces and steady growth."
-                description="My background combines formal BIM studies with hands-on professional frontend development, giving me both technical foundation and practical delivery experience."
+                title="A frontend developer who has built, shipped, and led."
+                description="A BIM degree from KCMIT gave me a foundation in both business and technology. Three years at Parijat Infotech turned that into hands-on delivery experience."
             />
 
             <div className="mt-12 grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
@@ -29,13 +29,13 @@ export default function AboutSection() {
                     className="liquid-glass rounded-[2rem] p-8"
                 >
                     <p className="text-base leading-8 text-slate-600 dark:text-slate-300">
-                        I am Nurbu Tsering Sherpa, a frontend developer with a Bachelor of Information Technology
-                        and Management (BIM) and 3 years of industry experience at Parijat Infotech Pvt. Ltd.
+                        I&apos;m Nurbu Tsering Sherpa, a frontend developer at Parijat Infotech Pvt. Ltd. I joined in
+                        2023, was promoted to lead the frontend team in 2025, and now focus on React development.
                     </p>
                     <p className="mt-5 text-base leading-8 text-slate-600 dark:text-slate-300">
-                        I enjoy building modern web interfaces that are responsive, maintainable, and easy for
-                        users to navigate. My focus is on translating requirements into polished frontend
-                        experiences.
+                        I&apos;ve worked on production websites for Japanese clients such as Yokohama DeNA
+                        BayStars, Sanfrecce Hiroshima, and Akachan Honpo. I enjoy turning designs into
+                        interfaces that are responsive, maintainable, and easy to use.
                     </p>
                 </motion.div>
 

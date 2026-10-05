@@ -11,8 +11,8 @@ export default function ProjectPreviewSection() {
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
                 <SectionHeading
                     eyebrow="Projects"
-                    title="Reusable content powers every project card."
-                    description="Project data is separated from presentation so you can add or edit portfolio items without touching the component logic."
+                    title="Recent work."
+                    description="A few highlights from client websites and personal builds."
                 />
 
                 <Link

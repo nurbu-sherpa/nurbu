@@ -49,8 +49,8 @@ export default function NotFound() {
                             </div>
                         </div>
                         <div className="mt-6 rounded-[1.8rem] border border-dashed border-accent/30 p-6 text-sm leading-7 text-slate-600 dark:text-slate-300">
-                            The custom 404 page keeps the same premium visual language as the hero so broken routes
-                            still feel intentional instead of generic.
+                            Head to the home page for an overview of my experience, or browse projects to see client
+                            websites and apps I&apos;ve worked on.
                         </div>
                     </div>
                 </div>

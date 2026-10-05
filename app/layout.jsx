@@ -7,19 +7,21 @@ import Footer from "@/components/Footer";
 export const metadata = {
     metadataBase: new URL("https://nurbu.vercel.app"),
     title: {
-        default: "Nurbu Tsering Sherpa | Frontend Developer",
+        default: "Nurbu Tsering Sherpa | Frontend Developer (React)",
         template: "%s | Nurbu Tsering Sherpa"
     },
     description:
-        "Portfolio of Nurbu Tsering Sherpa, a frontend developer with 3 years of experience building modern web interfaces.",
+        "Portfolio of Nurbu Tsering Sherpa, a React frontend developer in Kathmandu with 3+ years of experience building responsive websites and web apps, including former frontend team lead experience.",
     keywords: [
-        "developer portfolio",
-        "Next.js portfolio",
+        "Nurbu Tsering Sherpa",
+        "frontend developer",
         "React developer",
-        "full-stack developer"
+        "WordPress developer",
+        "frontend developer Nepal",
+        "Kathmandu"
     ],
     openGraph: {
-        title: "Nurbu Tsering Sherpa | Frontend Developer",
+        title: "Nurbu Tsering Sherpa | Frontend Developer (React)",
         description:
             "Explore the experience, projects, and contact details of Nurbu Tsering Sherpa.",
         url: "https://nurbu.vercel.app",
@@ -29,7 +31,7 @@ export const metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Nurbu Tsering Sherpa | Frontend Developer",
+        title: "Nurbu Tsering Sherpa | Frontend Developer (React)",
         description:
             "Explore the experience, projects, and contact details of Nurbu Tsering Sherpa."
     }

@@ -7,19 +7,24 @@ import SectionHeading from "@/components/SectionHeading";
 
 const slides = [
     {
-        title: "Frontend Engineering",
-        summary: "Building modern interfaces with React, Next.js, Tailwind CSS, and performant UI patterns.",
-        tags: ["React", "Next.js", "Tailwind", "Framer Motion"]
+        title: "React Development",
+        summary: "Building component-based interfaces and interactive features with React and modern JavaScript.",
+        tags: ["React", "JavaScript", "Next.js", "Tailwind CSS"]
     },
     {
         title: "Responsive UI",
-        summary: "Creating mobile-first layouts that adapt smoothly across breakpoints and devices.",
-        tags: ["Mobile-first", "Accessibility", "CSS Systems", "Layout"]
+        summary: "Turning designs into mobile-first, cross-browser layouts that work on every screen size.",
+        tags: ["HTML5", "CSS3", "Mobile-first", "Cross-browser"]
     },
     {
-        title: "Interactive Experiences",
-        summary: "Using animation and micro-interactions to make products feel polished and intuitive.",
-        tags: ["Motion", "Parallax", "Hover States", "Custom Cursor"]
+        title: "WordPress",
+        summary: "Developing, customizing, and maintaining WordPress themes for client websites.",
+        tags: ["Theme development", "Customization", "PHP", "MySQL"]
+    },
+    {
+        title: "Team Leadership",
+        summary: "Led the frontend team at Parijat Infotech, planning work, reviewing code, and mentoring developers.",
+        tags: ["Mentoring", "Task planning", "Code review", "Design handoff"]
     }
 ];
 
@@ -39,9 +44,9 @@ export default function SkillsCarousel() {
         <section className="mx-auto max-w-6xl px-6 py-20 sm:px-8">
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
                 <SectionHeading
-                    eyebrow="Slider"
-                    title="Swipe through the core skills behind the portfolio."
-                    description="The carousel supports drag gestures, navigation controls, and indicators, making it easy to reuse for projects, testimonials, or services."
+                    eyebrow="Skills"
+                    title="What I work with."
+                    description="Swipe or use the arrows to browse my core skills."
                 />
 
                 <div className="flex items-center gap-3">

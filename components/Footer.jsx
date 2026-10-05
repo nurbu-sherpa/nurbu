@@ -15,7 +15,7 @@ export default function Footer() {
                         Nurbu Tsering Sherpa
                     </p>
                     <p className="mt-2 max-w-md text-sm text-slate-600 dark:text-slate-300">
-                        Frontend developer with 3 years of experience at Parijat Infotech Pvt. Ltd., focused on building responsive and maintainable web interfaces.
+                        React frontend developer at Parijat Infotech Pvt. Ltd. in Kathmandu, with 3+ years of experience building responsive websites and web apps.
                     </p>
                 </div>
 

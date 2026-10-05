@@ -1,38 +1,58 @@
+// Add, remove, or reorder projects here. The first three appear on the home page.
+// Leave `href` empty for projects that don't have a public link.
 export const projects = [
-  {
-    slug: "signal-board",
-    title: "Signal Board",
-    category: "SaaS Dashboard",
-    description:
-      "A product analytics workspace designed for fast decision-making, with reusable chart modules and role-based collaboration flows.",
-    stack: ["Next.js", "Tailwind CSS", "Node.js", "PostgreSQL"],
-    href: "https://example.com/signal-board",
-  },
-  {
-    slug: "commerce-studio",
-    title: "Commerce Studio",
-    category: "Headless Commerce",
-    description:
-      "A storefront experience with dynamic merchandising sections, strong performance budgets, and a maintainable design system.",
-    stack: ["React", "TypeScript", "Tailwind CSS", "Stripe"],
-    href: "https://example.com/commerce-studio",
-  },
-  {
-    slug: "orbit-notes",
-    title: "Orbit Notes",
-    category: "Productivity App",
-    description:
-      "A collaborative note-taking tool with elegant interaction patterns, live updates, and a component strategy optimized for scale.",
-    stack: ["Next.js", "Framer Motion", "Prisma", "Supabase"],
-    href: "https://example.com/orbit-notes",
-  },
-  {
-    slug: "studio-grid",
-    title: "Studio Grid",
-    category: "Agency Platform",
-    description:
-      "A marketing platform for creative teams featuring modular content blocks, animated storytelling, and editorial flexibility.",
-    stack: ["Next.js", "Sanity", "Tailwind CSS", "Vercel"],
-    href: "https://example.com/studio-grid",
-  },
+    {
+        slug: "project-management-kanban",
+        title: "Project Management Kanban Board",
+        category: "Web App",
+        description:
+            "A Kanban-style board for organizing tasks into columns and moving work from to-do to done.",
+        stack: ["React", "JavaScript", "CSS"],
+        href: "https://project-management-kanbanboard.netlify.app/"
+    },
+    {
+        slug: "yokohama-dena-baystars",
+        title: "Yokohama DeNA BayStars",
+        category: "Client Website",
+        description:
+            "Fan-facing website for the Japanese professional baseball team, with responsive layouts and interactive sections.",
+        stack: ["WordPress", "JavaScript", "CSS"],
+        href: "https://www.baystars.co.jp/baseball"
+    },
+    {
+        slug: "sanfrecce-fan-club",
+        title: "Sanfrecce Hiroshima Fan Club",
+        category: "Membership Website",
+        description:
+            "Membership site for the Sanfrecce Hiroshima football club, built as a custom WordPress theme with a mobile-first UI.",
+        stack: ["WordPress", "PHP", "SCSS"],
+        href: "https://www.sanfrecce.co.jp/aso/sanfrecceclub/"
+    },
+    {
+        slug: "akachan-no-hi",
+        title: "Akachan Nohi Campaign",
+        category: "Campaign Microsite",
+        description:
+            "Campaign microsite for Akachan Honpo with a friendly, family-oriented design and careful attention to accessibility.",
+        stack: ["WordPress", "JavaScript", "CSS"],
+        href: "https://www.akachan.jp/akachannohi/"
+    },
+    {
+        slug: "night-festival-campaign",
+        title: "Night Festival Campaign",
+        category: "Campaign Website",
+        description:
+            "Seasonal Japanese campaign site with immersive visuals, scroll animations, and fully responsive layouts.",
+        stack: ["React", "GSAP", "Tailwind CSS"],
+        href: "https://www.sanfrecce.co.jp/aso/2026night-fes/"
+    },
+    {
+        slug: "halloween-campaign",
+        title: "Halloween Campaign",
+        category: "Marketing Page",
+        description:
+            "Interactive marketing page for a Halloween campaign, with playful motion and a theme-driven design.",
+        stack: ["JavaScript", "CSS", "WordPress"],
+        href: "https://www.sanfrecce.co.jp/aso/2026halloween/"
+    }
 ];
