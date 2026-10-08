@@ -120,8 +120,8 @@ Deployed on **Vercel**. Every push to `main` triggers a production deployment. R
 
 - **Website:** [nurbusherpa.com.np](https://nurbusherpa.com.np/)
 - **Email:** sherpanurbu15@gmail.com
-- **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/nurbu-tsering-sherpa)
-- **GitHub:** [github.com/your-username](https://github.com/nurbu-sherpa)
+- **LinkedIn:** [https://linkedin.com/in/nurbu-tsering-sherpa](https://linkedin.com/in/nurbu-tsering-sherpa)
+- **GitHub:** [https://github.com/nurbu-sherpa](https://github.com/nurbu-sherpa)
 
 ---
 
