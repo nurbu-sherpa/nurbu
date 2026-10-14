@@ -61,7 +61,7 @@ export default function ContactPage() {
                     </div>
 
                     <a
-                        href="/Nurbu_Tsering_Sherpa_CV.docx"
+                        href="/Nurbu_Tsering_Sherpa_CV.pdf"
                         download
                         className="mt-6 inline-flex rounded-full border border-border/80 px-5 py-2.5 text-sm font-semibold text-slate-900 transition hover:border-accent hover:text-accent dark:text-white"
                     >

@@ -120,7 +120,7 @@ export default function HeroSection() {
                             Let&apos;s talk
                         </Link>
                         <a
-                            href="/Nurbu_Tsering_Sherpa_CV.docx"
+                            href="/Nurbu_Tsering_Sherpa_CV.pdf"
                             download
                             data-cursor="interactive"
                             className={`rounded-full px-4 py-3 text-sm font-semibold text-slate-700 underline-offset-4 transition duration-200 hover:text-accent hover:underline dark:text-slate-200 ${focusRing}`}

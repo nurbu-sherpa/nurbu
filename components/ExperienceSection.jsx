@@ -87,7 +87,7 @@ export default function ExperienceSection() {
                         ))}
                     </div>
                     <a
-                        href="/Nurbu_Tsering_Sherpa_CV.docx"
+                        href="/Nurbu_Tsering_Sherpa_CV.pdf"
                         download
                         className="mt-8 inline-flex rounded-full bg-slate-950 px-5 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 dark:bg-white dark:text-slate-950"
                     >
