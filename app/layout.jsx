@@ -4,43 +4,52 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+const SITE_URL = "https://nurbusherpa.com.np";
+
 export const metadata = {
-    metadataBase: new URL("https://nurbu.vercel.app"),
+    metadataBase: new URL(SITE_URL),
     title: {
         default: "Nurbu Tsering Sherpa | Frontend Developer (React)",
         template: "%s | Nurbu Tsering Sherpa"
     },
     description:
         "Portfolio of Nurbu Tsering Sherpa, a React frontend developer in Kathmandu with 3+ years of experience building responsive websites and web apps, including former frontend team lead experience.",
-    keywords: [
-        "Nurbu Tsering Sherpa",
-        "frontend developer",
-        "React developer",
-        "WordPress developer",
-        "frontend developer Nepal",
-        "Kathmandu"
-    ],
+    authors: [{ name: "Nurbu Tsering Sherpa", url: SITE_URL }],
+    creator: "Nurbu Tsering Sherpa",
     openGraph: {
         title: "Nurbu Tsering Sherpa | Frontend Developer (React)",
         description:
             "Explore the experience, projects, and contact details of Nurbu Tsering Sherpa.",
-        url: "https://nurbu.vercel.app",
+        url: "/",
         siteName: "Nurbu Tsering Sherpa Portfolio",
         locale: "en_US",
-        type: "website"
+        type: "website",
+        images: [
+        {
+            url: "/preview.png",
+            width: 1200,
+            height: 630,
+            alt: "Nurbu Tsering Sherpa, Frontend Developer (React)"
+        }
+    ]
     },
     twitter: {
         card: "summary_large_image",
         title: "Nurbu Tsering Sherpa | Frontend Developer (React)",
         description:
-            "Explore the experience, projects, and contact details of Nurbu Tsering Sherpa."
+            "Explore the experience, projects, and contact details of Nurbu Tsering Sherpa.",
+        images: ["/preview.png"]
+    },
+    robots: {
+        index: true,
+        follow: true
     }
 };
 
 export default function RootLayout({ children }) {
     return (
         <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
-            <body className="bg-surface text-slate-900 antialiased transition-colors duration-300 dark:text-slate-100" cz-shortcut-listen="false">
+            <body className="bg-surface text-slate-900 antialiased transition-colors duration-300 dark:text-slate-100">
                 <div className="relative min-h-screen overflow-hidden">
                     <CustomCursor />
                     <ScrollToTop />

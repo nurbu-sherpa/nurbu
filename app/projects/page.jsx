@@ -4,8 +4,8 @@ import { projects } from "@/data/projects";
 
 export const metadata = {
     title: "Projects",
-    description:
-        "Client websites, campaign pages, and web apps built by Nurbu Tsering Sherpa with React and WordPress."
+    description: "Client websites and React projects by Nurbu Tsering Sherpa, including work for Yokohama DeNA BayStars and Sanfrecce Hiroshima.",
+    alternates: { canonical: "/projects" }
 };
 
 export default function ProjectsPage() {

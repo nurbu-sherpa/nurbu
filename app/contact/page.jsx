@@ -3,7 +3,8 @@ import SectionHeading from "@/components/SectionHeading";
 
 export const metadata = {
     title: "Contact",
-    description: "Get in touch with Nurbu Tsering Sherpa about frontend roles, freelance work, or a project."
+    description: "Get in touch with Nurbu Tsering Sherpa, a React frontend developer based in Kathmandu.",
+    alternates: { canonical: "/contact" }
 };
 
 const contactDetails = [
