@@ -13,6 +13,7 @@ const personJsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Nurbu Tsering Sherpa",
+    alternateName: "Nurbu Sherpa",
     url: "https://nurbusherpa.com.np",
     jobTitle: "Frontend Developer (React)",
     worksFor: { "@type": "Organization", name: "Parijat Infotech Pvt. Ltd." },
